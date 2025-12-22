@@ -9,3 +9,4 @@ python-multipart
 fastapi-mail
 pydantic-settings
 email-validator
+dnspython
