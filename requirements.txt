@@ -10,3 +10,4 @@ fastapi-mail
 pydantic-settings
 email-validator
 dnspython
+certifi

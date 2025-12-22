@@ -1,3 +1,4 @@
+
 from fastapi import FastAPI
 from app.database import connect_to_mongo, close_mongo_connection
 from app.routers import auth, users, servers, email
