@@ -2,7 +2,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    MONGODB_URL: str = "mongodb://admin:admin@localhost:27017/?authSource=admin"
+    MONGODB_URL: str = "mongodb+srv://shrivastavakhushi419_db_user:jDvt29ZU2A6CXsXN@cluster0.jlamjt7.mongodb.net/?appName=Cluster0"
     DB_NAME: str = "server_manager_db"
     SECRET_KEY: str = "your-secret-key-here"
     ALGORITHM: str = "HS256"
@@ -25,6 +25,6 @@ async def connect_to_mongo():
     db.client = AsyncIOMotorClient(settings.MONGODB_URL)
     print("Connected to MongoDB")
 
-async def close_mongo_connection():
+async def close_mongo_connection(): 
     db.client.close()
     print("Closed MongoDB connection")
