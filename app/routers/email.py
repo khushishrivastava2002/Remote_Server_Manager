@@ -11,7 +11,7 @@ router = APIRouter()
 # Email Configuration
 conf = ConnectionConfig(
     MAIL_USERNAME="shrivastavakhushi419@gmail.com",
-    MAIL_PASSWORD="your-password",
+    MAIL_PASSWORD="plor ylgf mjtu pfnh",
     MAIL_FROM="shrivastavakhushi419@gmail.com",
     MAIL_PORT=587,
     MAIL_SERVER="smtp.gmail.com",
