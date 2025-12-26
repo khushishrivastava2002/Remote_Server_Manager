@@ -2,11 +2,11 @@ from motor.motor_asyncio import AsyncIOMotorClient
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    MONGODB_URL: str = "mongodb+srv://shrivastavakhushi419_db_user:jDvt29ZU2A6CXsXN@cluster0.jlamjt7.mongodb.net/?appName=Cluster0"
-    DB_NAME: str = "server_manager_db"
-    SECRET_KEY: str = "your-secret-key-here"
-    ALGORITHM: str = "HS256"
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
+    MONGODB_URL: str
+    DB_NAME: str
+    SECRET_KEY: str
+    ALGORITHM: str
+    ACCESS_TOKEN_EXPIRE_MINUTES: int
 
     # Email Settings
     MAIL_USERNAME: str
